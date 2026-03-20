@@ -13,8 +13,9 @@ public class ApplicationDbContext : IdentityDbContext
 
     // Aqui nós declaramos a Model que você acabou de criar!
     public DbSet<Categoria> Categorias { get; set; }
+    public DbSet<Evento> Eventos { get; set; }
 
-public DbSet<GestaoEventos.Models.Local> Local { get; set; } = default!;
+    public DbSet<GestaoEventos.Models.Local> Local { get; set; } = default!;
 
     // Passo 3: 
     // Criar a migration que será responsável por
